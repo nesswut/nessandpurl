@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+      <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+  
+<head> 
+<title> Ness & Purl - A knitting magazine website </title>
+	<meta http=ecquiv="Content-Type" content="text/html; charset=UTF-8"/> 
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--[if lt IE 9]>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+	</script>
+	<link href="style.css" rel="stylesheet" type="text/css">
+	 
+</head>
+
+
+<body>
+<div id="header"><img src="images/logotwo.png" height="90px"></div>
+
+<br>
+<nav class="clearfix">  
+    <ul class="clearfix">  
+        <li id="news"><a href="index.html">news</a></li>  
+        <li><a href="tutorials.html">tutorials</a></li>  
+        <li><a href="patterns.html">patterns</a></li>  
+        <li><a href="interact.html">interact</a></li>  
+   
+    </ul>  
+    <a href="#" id="pull"><img src="images/logotiny.png"></a>  
+</nav>  
+
+
+  <div id="sidebar">
+	<a href="index.html" border="0"><center><img src="images/logoone.png" ></center></a>
+	Welcome to Ness & Purl a knitting magazine and haven for new 
+and old knitters. Here you can find tutorials to teach you to knit, many FREE patterns to explore with all different skill levels, as well as a way to get involved via the interact page. Take a look around and have your say.
+  </div>
+ 
+ 
+ <div id="content">
+	<div id="basicbox">
+	<center><a href="basics.html"><img src="images/wool.png"  border="0"></a>
+	<br>
+    Here you can learn the absolute basics, from how to do a slipknot, to cast on and start your project. This page is essential, so if you're a beginner, or need a refresher, take a look and get to grips on how to start.</center>
+      </div>
+      
+     <div id="easybox">
+      <center><a href="easy.html"><img src="images/easy.png" border="0" class="reduced"></a><br></center>
+      <p>These are stitches that can help you start off your project. They are the easiest stitches to start off with and can be incorporated into any project, from blankets, hats and even socks!</p>
+      
+      </div>
+	  	
+      
+          <div id="intermediatebox">
+                <center><a href="intermediate.html"><img src="images/intermediate.png" border="0" class="reduced"></a></center>
+                <p> These types of stitches are a bit more difficult and you need to understand how to read the charts provided. They look great as scarves or hats, perhaps used when knitting in the round.</p>
+
+      </div>
+      <div id="hardbox">
+            <center><a href="hard.html"><img src="images/hard.png" border="0" class="reduced"></a></center>
+			<p> With these stitches, they are the most difficult to understand, so much more advanced knitters are advised to attemp these! Give them a try and let me know what project you used it for.</p>
+      </div>
+        
+      
+      </div>
+	  	  <div id="footer">
+	  <div class="copyright">&copy; 2013 Ness & Purl</div>
+	 </div>
+	 </div>
+
+
+</body>
+</html>

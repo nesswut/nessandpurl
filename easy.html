@@ -1,0 +1,111 @@
+<! DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0
+Transitional//EN"
+"http://www.w3.org/TR/xhtmll/DTD/xhtmll-transitional.dtd"> <html xmins="http://www.w3.org/1999/xhtml"> 
+<head> 
+<title> Ness & Purl - A knitting magazine website </title>
+	<meta http=ecquiv="Content-Type" content="text/html; charset=UTF-8"/> 
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--[if lt IE 9]>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+	<link href="style.css" rel="stylesheet" type="text/css"  />
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+	</script>
+
+</head>
+
+
+<body>
+<div id="header"><img src="images/logotwo.png" height="90px"></div>
+
+<br>
+<nav class="clearfix">  
+    <ul class="clearfix">  
+        <li id="news"><a href="index.html">News</a></li>  
+        <li><a href="tutorials.html">Tutorials</a> 
+							<span id="s1"></span>
+		                    <ul class="subs">
+                        <li class="linkone"><a href="basics.html">Basics</a></li>
+                        <li class="linktwo"><a href="easy.html">Easy</a></li>
+                        <li class="linkthree"><a href="intermediate.html">Intermediate</a></li>
+                        <li class="linkfour"><a href="hard.html">Hard</a></li>
+                            
+                        </li>
+                        
+                    </ul>
+                
+                <li><a href="patterns.html">Patterns</a>
+                    <span id="s2"></span>
+                    <ul class="subs">
+                        <li class="linkone"><a href="abbreviations.html">Abbreviations</a></li>
+                        <li class="linktwo"><a href="clothes.html">Clothes</a></li>
+                        <li class="linkthree"><a href="accessories.html">Accessories</a></li>
+                        <li class="linkfour"><a href="homefurnishings.html">Furnishings</a></li>
+                    </ul>
+                </li>
+                <li><a href="interact.html">Interact</a></li>
+    </ul>  
+    <a href="#" id="pull"><img src="images/logotiny.png"></a>  
+</nav> 
+
+  <div id="sidebar">
+	<a href="index.html" border="0"><center><img src="images/logoone.png" ></center></a>
+	Welcome to Ness & Purl
+a knitting magazine and haven for new 
+and old knitters. Here you can find tutorials to teach you to knit, many FREE patterns to explore with all different skill levels, as well as a way to get involved via the interact page. Take a look around and have your say.
+  </div>
+ 
+ 
+ <div id="content">
+	<div id="pinkbox">
+		<img src="images/easystitches.png">
+	</div>
+	
+	<div id="stitches">
+		<img src="images/easy1.jpg"> 
+		<strong><center>Garter Stitch (g Stitch)</center></strong>
+		<p>Knit every row in flat knitting, and you have garter stitch. It's a great stitch pattern for new knitters because it uses only one simple stitch. Because garter stitch lays flat without curling, it's often used at the beginning and ends of rows to create flat, non-curling edges. Note: If you knit in the round, on circular or double-pointed needles, you'll create stockinette stitch instead of garter stitch.</p><br>
+	</div>
+	
+	<div id="stitches">
+		<img src="images/easy2.jpg">
+		<strong><center>Stockinette Stitch (St St)</center></strong>
+		<p>This is the most commonly used stitch pattern. Simply knit one row, purl the next, and repeat to produce this pattern. Stockinette stitch will curl at the edges when not stabilized with other, non-curling, stitch patterns, such as garter stitch. Because of that, border stitch patterns are usually added to the lower and upper edges, and the side edges are sewn into the seam. To obtain an accurate measurement, you can block it to keep it flat temporarily.</p>
+	</div>
+	
+	<div id="stitches">
+		<img src="images/easy3.jpg">
+		<strong><center>Ribbing (rib, k1, p1)</center></strong>
+		<p>You'll recognize ribbing as the stitch found at the cuffs and hems of sweaters. It is a very elastic pattern and knits up narrower than stockinette stitch on the same size needles. There are many ways of making ribbing, but the most common are the single rib (fig. 12a) and the double rib (fig. 12b).</p>
+	</div>
+	<div id="stitches">
+		<img src="images/easy4.jpg">
+		<strong><center>Double Ribbing (rib, k2, p2)</center></strong>
+		<p>The single rib is made by alternating one knit stitch with one purl stitch (abbreviated as k1,p1). The double rib is more elastic than the single rib and is made by alternating two knit stitches with two purl stitches (abbreviated k2,p2).</p>
+	</div>
+	
+	<div id="footer">
+	  &copy; 2013 Ness & Purl
+	</div>
+</body>
+</html>

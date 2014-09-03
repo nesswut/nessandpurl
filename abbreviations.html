@@ -1,0 +1,311 @@
+<! DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0
+Transitional//EN"
+"http://www.w3.org/TR/xhtmll/DTD/xhtmll-transitional.dtd"> <html xmins="http://www.w3.org/1999/xhtml"> 
+<head> 
+<title> Ness & Purl - A knitting magazine website </title>
+	<meta http=ecquiv="Content-Type" content="text/html; charset=UTF-8"/> 
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--[if lt IE 9]>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+	<link href="style.css" rel="stylesheet" type="text/css"  />
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+	</script>
+
+</head>
+
+
+<body>
+<div id="header"><img src="images/logotwo.png"></div>
+
+<br>
+<nav class="clearfix">  
+    <ul class="clearfix">  
+        <li id="news"><a href="index.html">News</a></li>  
+        <li><a href="tutorials.html">Tutorials</a> 
+							<span id="s1"></span>
+		                    <ul class="subs">
+                        <li class="linkone"><a href="basics.html">Basics</a></li>
+                        <li class="linktwo"><a href="easy.html">Easy</a></li>
+                        <li class="linkthree"><a href="intermediate.html">Intermediate</a></li>
+                        <li class="linkfour"><a href="hard.html">Hard</a></li>
+                            
+                        </li>
+                        
+                    </ul>
+                
+                <li><a href="patterns.html">Patterns</a>
+                    <span id="s2"></span>
+                    <ul class="subs">
+                        <li class="linkone"><a href="abbreviations.html">Abbreviations</a></li>
+                        <li class="linktwo"><a href="clothes.html">Clothes</a></li>
+                        <li class="linkthree"><a href="accessories.html">Accessories</a></li>
+                        <li class="linkfour"><a href="homefurnishings.html">Furnishings</a></li>
+                    </ul>
+                </li>
+                <li><a href="interact.html">Interact</a></li>
+    </ul>  
+    <a href="#" id="pull"><img src="images/logotiny.png"></a>  
+</nav> 
+
+  <div id="sidebar">
+	<a href="index.html" border="0"><center><img src="images/logoone.png" ></center></a>
+	Welcome to Ness & Purl
+a knitting magazine and haven for new 
+and old knitters. Here you can find tutorials to teach you to knit, many FREE patterns to explore with all different skill levels, as well as a way to get involved via the interact page. Take a look around and have your say.
+  </div>
+ 
+ 
+ <div id="content">
+	<div id="greenbox">
+		<img src="images/abbreviationsglossary.png">
+		</div>
+
+<table id="table">
+<tr>
+  <th>Abbreviation</th>
+  <th>Description</th>
+  <th>Abbreviation</th>
+  <th>Description</th>
+</tr>
+<tr>
+<td>[ ]</td>
+<td>work instructions within brackets as many times as directed</td>
+<td>pat (s) or patt</td>
+<td>pattern(s)</td>
+</tr>
+<tr>
+<td>( )</td>
+<td>work instructions within parentheses in the place directed</td>
+<td>pm</td>
+<td>place marker</td>
+</tr>
+<tr>
+<td>* *</td>
+<td>repeat instructions following the asterisk as directed</td>
+<td>pop</td>
+<td>popcorn</td>
+</tr>
+<tr>
+<td>*</td>
+<td>repeat instructions following the single asterisk as directed</td>
+<td>p2tog</td>
+<td>purl 2 stitches together</td>
+</tr>
+<tr>
+<td>"</td>
+<td>inch(es)</td>
+<td>prev</td>
+<td>previous</td>
+</tr>
+<tr>
+<td>alt</td>
+<td>alternate</td>
+<td>psso</td>
+<td>pass slipped stitch over</td>
+</tr>
+<tr>
+<td>approx</td>
+<td>approximately</td>
+<td>pwise</td>
+<td>purlwise</td>
+</tr>
+<tr>
+<td>beg</td>
+<td>begin/beginning</td>
+<td>rem</td>
+<td>remain/remaining</td>
+</tr>
+<tr>
+<td>bet</td>
+<td>between</td>
+<td>rep</td>
+<td>repeat(s)</td>
+</tr>
+<tr>
+<td>BO</td>
+<td>bind off</td>
+<td>rev St st</td>
+<td>reverse stockinette stitch</td>
+</tr>
+<tr>
+<td>CA</td>
+<td>colour A</td>
+<td>RH</td>
+<td>right hand</td>
+</tr>
+<tr>
+<td>CB</td>
+<td>colour B</td>
+<td>rnd(s)</td>
+<td>round(s)</td>
+</tr>
+<tr>
+<td>CC</td>
+<td>contrasting colour</td>
+<td>RS</td>
+<td>right side</td>
+</tr>
+<tr>
+<td>cm</td>
+<td>centimetre(s)</td>
+<td>sk</td>
+<td>skip</td>
+</tr>
+<tr>
+<td>cn</td>
+<td>cable needle</td>
+<td>skp</td>
+<td>slip, knit, pass stitch over - one stitch decreased</td>
+</tr>
+<tr>
+<td>CO</td>
+<td>cast on</td>
+<td>sk2p</td>
+<td>slip 1, knit 2 togetherm pass slip stitch over the knit 2 together, 2 stitches have been descreased</td>
+</tr>
+<tr>
+<td>cont</td>
+<td>continue</td>
+<td>sl</td>
+<td>slip</td>
+</tr>
+<tr>
+<td>dec</td>
+<td>decrease/descreases/decreasing</td>
+<td>sl1k</td>
+<td>slip 1 knitwise</td>
+</tr>
+<tr>
+<td>dpn</td>
+<td>double pointed needle(s)</td>
+<td>sl1p</td>
+<td>slip 1 purlwise</td>
+</tr>
+<tr>
+<td>fl</td>
+<td>front loop(s)</td>
+<td>sl st</td>
+<td>slip stitch(es)</td>
+</tr>
+<tr>
+<td>foll</td>
+<td>follow/follows/following</td>
+<td>ss</td>
+<td>slip stitch (Canadian)</td>
+</tr>
+<tr>
+<td>g</td>
+<td>gram</td>
+<td>ssk</td>
+<td>slip, slip knit these two stitches together - a decrease</td>
+</tr>
+<tr>
+<td>inc</td>
+<td>increase/increases/increasing</td>
+<td>sssk</td>
+<td>slip, slip, slip, knit 3 stitches together</td>
+</tr>
+<tr>
+<td>k or K</td>
+<td>knit</td>
+<td>st(s)</td>
+<td>stitches</td>
+</tr>
+<tr>
+<td>k2tog</td>
+<td>knit 2 stitches together</td>
+<td>St st</td>
+<td>stockinette stitch/stocking stitch</td>
+</tr>
+<tr>
+<td>kwise</td>
+<td>knitwise</td>
+<td>tbl</td>
+<td>through back loop</td>
+</tr>
+<tr>
+<td>LH</td>
+<td>left hand</td>
+<td>tog</td>
+<td>together</td>
+</tr>
+<tr>
+<td>lp(s)</td>
+<td>loop(s)</td>
+<td>WS </td>
+<td>wrong side</td>
+</tr>
+<tr>
+<td>m</td>
+<td>meter(s)</td>
+<td>wyib</td>
+<td>with yarn in back</td>
+</tr>
+<tr>
+<td>m1</td>
+<td>make one stitch</td>
+<td>wyif</td>
+<td>with yarn in front</td>
+</tr>
+<tr>
+<td>M1 p-st</td>
+<td>make one purl stitch</td>
+<td>yd(s)</td>
+<td>yard(s)</td>
+</tr>
+<tr>
+<td>MC</td>
+<td>main colour</td>
+<td>yfwd</td>
+<td>yarn forward</td>
+</tr>
+<tr>
+<td>mm</td>
+<td>millimetres</td>
+<td>yo</td>
+<td>yarn over</td>
+</tr>
+<tr>
+<td>oz</td>
+<td>(ounce(s)</td>
+<td>yrn</td>
+<td>yarn around needle</td>
+</tr>
+<tr>
+<td>p or P</td>
+<td>purl</td>
+<td>yon</td>
+<td>yarn over needle</td>
+</tr>
+</table>
+</body>
+</html>
+
+
+	<div id="footer">
+	  &copy; 2013 Ness & Purl
+	</div>
+	</div>
+</body>
+</html>

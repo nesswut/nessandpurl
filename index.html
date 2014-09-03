@@ -1,0 +1,104 @@
+<! DOCTYPE html> 
+<head> 
+<title> Ness & Purl - A knitting magazine website </title>
+	<meta http=ecquiv="Content-Type" content="text/html; charset=UTF-8"/> 
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--[if lt IE 9]>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+	<link href="style.css" rel="stylesheet" type="text/css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});            
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+	</script>
+</head>
+
+<body>
+<div id="header"><img src="images/logotwo.png" height="90px"></div>
+
+<br>
+<nav class="clearfix">  
+    <ul class="clearfix">  
+        <li id="news"><a href="index.html">News</a></li>  
+        <li><a href="tutorials.html">Tutorials</a> 
+							<span id="s1"></span>
+		                    <ul class="subs">
+                        <li class="linkone"><a href="basics.html">Basics</a></li>
+                        <li class="linktwo"><a href="easy.html">Easy</a></li>
+                        <li class="linkthree"><a href="intermediate.html">Intermediate</a></li>
+                        <li class="linkfour"><a href="hard.html">Hard</a></li>
+                            
+                        </li>
+                        
+                    </ul>
+                
+                <li><a href="patterns.html">Patterns</a>
+                    <span id="s2"></span>
+                    <ul class="subs">
+                        <li class="linkone"><a href="abbreviations.html">Abbreviations</a></li>
+                        <li class="linktwo"><a href="clothes.html">Clothes</a></li>
+                        <li class="linkthree"><a href="accessories.html">Accessories</a></li>
+                        <li class="linkfour"><a href="homefurnishings.html">Furnishings</a></li>
+                    </ul>
+                </li>
+                <li><a href="interact.html">Interact</a></li>
+    </ul>  
+    <a href="#" id="pull"><img src="images/logotiny.png"></a>  
+</nav> 
+
+  <div id="sidebar">
+	<a href="index.html" border="0"><center><img src="images/logoone.png" ></center></a>
+	Welcome to Ness & Purl
+a knitting magazine and haven for new 
+and old knitters. Here you can find tutorials to teach you to knit, many FREE patterns to explore with all different skill levels, as well as a way to get involved via the interact page. Take a look around and have your say.
+  </div>
+ 
+ 
+ <div id="indexcolumn">
+	<div id="columnone">
+	<center><img src="images/instagram.jpg"></center>
+	<h2> Tea for two</h2>
+
+ Today was a slow day for knitting, but a great day for tea. Look at how sweet that tea cup is! There was a McMillian coffee morning held at the local cafe, where if you donate one whole sterling pound, you get a cup of tea and a cake of your own choosing. I chose a delicious chocolate cupcake, just what I needed for a nice early morning. <br><br>
+ I have been able to keep up and knit a few items, such as a cable knit pillow case for my older sister. She wanted a beige-y coloured standard pillow, probably to go with the blanket that I knitted for when my niece arrived. (You can find the pattern <a href="homefurnishings.html">here</a>) I will also attach a link for the pillow case and a possible picture soon enough! <br><br>Hope you all have a lovely weekend and let me know what you will be knitting, share your links or pictures on the interact page!
+      
+      </div>
+      
+     <div id="columnone">
+  Hi all! Just a quick note here! Just filling this in whilst I have a little break from knitting a jumper for myself! Do you ever get that feeling that once you start knitting, you need to stop everything else and just carry on knitting until it is finished!? Let me know on the interact page!</div>
+      
+          <div id="columnone">
+How's the knitting going people? I am currently in the process starting the jumper for a pattern that I paid for with real actual money! Le gasp! That's how badly I wanted to knit this! <br><br>It is going to nice and lightweight, so I can wear it on a nice summers day (if that ever happens again!) What are you knitting today? <br><br><br></div>
+
+      <div id="columnone">
+	  <center><img src="images/bridge.jpg"></center>
+      <h3>The bridge of iron</h3>
+      Here you can see the infamous Ironbridge, located in Ironbridge, Telford. It is very idyllic isn't it? We went on a family trip around Ironbridge, had a lovely walk down many wobbly stairs on a beautiful and rare, sunny day. I even convinced my mother to buy an ice cream for me (to share with my siblings, sigh.) It was a very pleasent day, which ended with us feasting at a local pub, ironically fitting for the day; 'The Bridge Builder'. I may have had a sharing platter all to myself.. whoops!<br>
+      </div>
+      
+        
+      
+      </div>
+	<div id="footer">
+	<a href="#menu">Back to top</a>
+	  <div class="copyright">&copy; 2013 Ness & Purl</div>
+	 </div>
+</body>
+</html>

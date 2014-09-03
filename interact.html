@@ -1,0 +1,197 @@
+<! DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0
+Transitional//EN"
+"http://www.w3.org/TR/xhtmll/DTD/xhtmll-transitional.dtd"> <html xmins="http://www.w3.org/1999/xhtml"> 
+<head> 
+<title> Ness & Purl - A knitting magazine website </title>
+	<meta http=ecquiv="Content-Type" content="text/html; charset=UTF-8"/> 
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!--[if lt IE 9]>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+	<link href="style.css" rel="stylesheet" type="text/css"  />
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+	</script>
+
+</head>
+
+
+<body>
+<div id="header"><img src="images/logotwo.png"></div>
+
+<br>
+<nav class="clearfix">  
+    <ul class="clearfix">  
+        <li id="news"><a href="index.html">News</a></li>  
+        <li><a href="tutorials.html">Tutorials</a> 
+							<span id="s1"></span>
+		                    <ul class="subs">
+                        <li class="linkone"><a href="basics.html">Basics</a></li>
+                        <li class="linktwo"><a href="easy.html">Easy</a></li>
+                        <li class="linkthree"><a href="intermediate.html">Intermediate</a></li>
+                        <li class="linkfour"><a href="hard.html">Hard</a></li>
+                            
+                        </li>
+                        
+                    </ul>
+                
+                <li><a href="patterns.html">Patterns</a>
+                    <span id="s2"></span>
+                    <ul class="subs">
+                        <li class="linkone"><a href="abbreviations.html">Abbreviations</a></li>
+                        <li class="linktwo"><a href="clothes.html">Clothes</a></li>
+                        <li class="linkthree"><a href="accessories.html">Accessories</a></li>
+                        <li class="linkfour"><a href="homefurnishings.html">Furnishings</a></li>
+                    </ul>
+                </li>
+                <li><a href="interact.html">Interact</a></li>
+    </ul>  
+    <a href="#" id="pull"><img src="images/logotiny.png"></a>  
+</nav> 
+
+  
+  <div id="sidebar">
+	<a href="index.html" border="0"><center><img src="images/logoone.png" ></center></a>
+	Welcome to Ness & Purl
+a knitting magazine and haven for new 
+and old knitters. Here you can find tutorials to teach you to knit, many FREE patterns to explore with all different skill levels, as well as a way to get involved via the interact page. Take a look around and have your say.
+  </div>
+ 
+ 
+ <div id="content">
+	<div id="interact">
+	<center>
+	
+	<a href="http://www.ravelry.com/nesswut"><img src="images/raverlyicon.png"></a>
+	<a href="http://www.facebook.com"><img src="images/facebook.png"></a>
+	<a href="http://www.twitter.com"><img src="images/twitter.png"></a>
+	<a href="http://www.youtube.com"><img src="images/youtube.png"></a>
+	</center>
+	<br>
+    </div>
+    <div id="interact">
+	<div id="comment_form">
+	
+	<div>
+	  <input type="text" name="name" id="name" value="" placeholder="Name">
+	</div>
+	<div>
+		<input type="email" name="email" id="email" value="" placeholder="Email">
+	</div>
+	<div>
+		<input type="url" name="website" id="website" value="" placeholder="Website URL">
+	</div></div>
+		<div id="comment_form">
+	<div>
+		<textarea rows="5" name="comment" id="comment" placeholder="Comment"></textarea>
+	</div>
+	<div>
+		<input type="submit" name="submit" value="Add Comment">
+	</div></div>
+	
+</div>
+
+<div id="interact">
+<ul id="comments">
+				<li class="cmmnt">
+				  <div class="avatar"><a href="javascript:void(0);"><img src="images/sushi/sushi06.png" width="55" height="55" alt="DarkCubes photo avatar"></a></div>
+				  <div class="cmmnt-content">
+				    <header><a href="javascript:void(0);" class="userlink">DorrisDay</a> - <span class="pubdate">posted 1 week ago</span></header>
+				    <p>Hi There! I'm new to all this knitting business, so enjoying the different levels of difficulty! Can't wait to try that lotus stitch, but for now, I will stitch to classic k1p1! loving the website, its so cute!</p>
+				  </div>
+				  
+				  <ul class="replies">
+				    <li class="cmmnt">
+				      <div class="avatar"><a href="javascript:void(0);"><img src="images/sushi/sushi19.png" width="55" height="55" alt="Sir_Pig photo avatar"></a></div>
+				      <div class="cmmnt-content">
+				      <header><a href="javascript:void(0);" class="userlink">Ness & Purl</a> - <span class="pubdate">posted 1 day ago</span></header>
+				      <p>Welcome! We always encourage every user to start off easy, and gently move up to the harder stitches! Glad you like the website!</p>
+				      </div> 
+				    </li>
+				  </ul>
+				</li>
+        
+        <li class="cmmnt">
+          <div class="avatar"><a href="javascript:void(0);"><img src="images/sushi/sushi09.png" width="55" height="55" alt="pikabob photo avatar"></a></div>
+          <div class="cmmnt-content">
+            <header><a href="javascript:void(0);" class="userlink">StitchingSally</a> - <span class="pubdate">posted 6 days ago</span></header>
+            <p>Great work Ness & Purl, keep up the amazing posts!</p>
+          </div>
+        </li>
+        
+        <li class="cmmnt">
+          <div class="avatar"><a href="javascript:void(0);"><img src="images/sushi/sushi12.png" width="55" height="55" alt="default avatar"></a></div>
+          <div class="cmmnt-content">
+            <header><a href="javascript:void(0);" class="userlink">Wooly Wendy</a> - <span class="pubdate">posted 5 days ago</span></header>
+            <p>What a great website! Really love the abbreviations table! I will definitely be bookmarking this! Quick question, how to do a button hole? thanks!</p>
+          </div>
+          
+          <ul class="replies">
+            <li class="cmmnt">
+              <div class="avatar"><a href="javascript:void(0);"><img src="images/sushi/sushi19.png" width="55" height="55" alt="Professor photo avatar"></a></div>
+              <div class="cmmnt-content">
+                <header><a href="javascript:void(0);" class="userlink">Ness & Purl</a> - <span class="pubdate">posted 3 days ago</span></header>
+                <p>If you want a simple button hole, just *yarn over, k2tog*</a></p>
+              </div>
+              
+              <ul class="replies">
+                <li class="cmmnt">
+                  <div class="avatar"><a href="javascript:void(0);"><img src="images/sushi/sushi16.png" width="55" height="55" alt="default avatar"></a></div>
+                  <div class="cmmnt-content">
+                    <header><a href="javascript:void(0);" class="userlink">BrilliantBetty</a> - <span class="pubdate">posted 2 days ago</span></header>
+                    <p>Indeed!</p>
+                  </div>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          
+          <ul class="replies">
+            <li class="cmmnt">
+              <div class="avatar"><a href="javascript:void(0);"><img src="images/sushi/sushi15.png" width="55" height="55" alt="Maximus photo avatar"></a></div>
+              <div class="cmmnt-content">
+                <header><a href="javascript:void(0);" class="userlink">Purl and Pat</a> - <span class="pubdate">posted 5 days ago</span></header>
+                <p> Yeah, that is probably the simplest solution!</p>
+              </div>              
+            </li>
+          </ul>          
+        </li>
+        
+        <li class="cmmnt">
+          <div class="avatar"><a href="javascript:void(0);"><img src="images/sushi/sushi03.png" width="55" height="55" alt="default avatar"></a></div>
+          <div class="cmmnt-content">
+            <header><a href="javascript:void(0);" class="userlink">Castoff Carol</a> - <span class="pubdate">posted 11 hours ago</span></header>
+            <p>Oh what a brilliant headband pattern! I am so going to knit this for my baby niece! She has the most beautiful hair that needs to be tamed with this!</p>
+          </div>  
+        </li>
+      </ul>
+    </div>
+  </div>
+	
+	</div>
+
+	<div id="footer">
+	  &copy; 2013 Ness & Purl
+	</div>
+	</div>
+</body>
+</html>
